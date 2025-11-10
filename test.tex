@@ -1,0 +1,26 @@
+\documentclass{jsarticle}
+\usepackage{diagbox} % 今回の問題に必要なパッケージ
+\usepackage{array}   % 表のレイアウト用
+
+\begin{document}
+
+\section*{最小構成テスト}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{|c||c|c|c|c|}
+    \hline
+    \diagbox{チーム}{対戦相手} & A & B & C & D \\
+    \hline \hline
+    A & \diagbox{}{} & ○ 3-1 & × 0-2 & ○ 5-0 \\
+    \hline
+    B & × 1-3 & \diagbox{}{} & ○ 2-0 & △ 1-1 \\
+    \hline
+    C & ○ 2-0 & × 0-2 & \diagbox{}{} & × 0-1 \\
+    \hline
+    D & × 0-5 & △ 1-1 & ○ 1-111 & \diagbox{}{} \\
+    \hline
+\end{tabular}
+\end{center}
+
+\end{document}

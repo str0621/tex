@@ -1,0 +1,26 @@
+{
+    "latex-workshop.latex.recipes": [
+    {
+      "name": "latexmk (platex + dvipdfmx + shell-escape)",
+      "tools": ["latexmk_platex"]
+    }
+  ],
+  "latex-workshop.latex.tools": [
+    {
+      "name": "latexmk_platex",
+      "command": "latexmk",
+      "args": [
+        "-e",
+        "$latex=q/platex %O -shell-escape %S/",
+        "-e",
+        "$dvipdf=q/dvipdfmx %O -o %D %S/",
+        "-pdfdvi",
+        "%DOC%"
+      ]
+    }
+  ]
+
+
+
+}
+
