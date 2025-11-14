@@ -1,13 +1,14 @@
 # Fdb version 4
-["dvipdf"] 1762613224.39698 "ptheory.dvi" "ptheory.pdf" "ptheory" 1762613224.96371 0
-  "ptheory.dvi" 1762613224.33516 7888 eb9e09012cf8aed74cba18c00c4b9415 "latex"
+["dvipdf"] 1763098397.32622 "ptheory.dvi" "ptheory.pdf" "ptheory" 1763098397.67115 0
+  "ptheory.dvi" 1763098397.28831 13904 ab192967b37e6a7cd40fe4cf64fbf682 "latex"
   (generated)
   "ptheory.pdf"
   (rewritten before read)
-["latex"] 1762613223.82492 "/home/str/tex/ptheory.tex" "ptheory.dvi" "ptheory" 1762613224.96216 0
-  "/etc/texmf/web2c/texmf.cnf" 1747501380.87135 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/str/tex/ptheory.tex" 1762613223.62097 3263 9bd690c9cbc9ebb678b968281e4d64de ""
+["latex"] 1763098396.87676 "/home/str/tex/ptheory.tex" "ptheory.dvi" "ptheory" 1763098397.66986 0
+  "/etc/texmf/web2c/texmf.cnf" 1761209449.24117 475 c0e671620eb5563b2130f56340a5fde8 ""
+  "/home/str/tex/ptheory.tex" 1763098396.66831 6636 4cc617101f108e6d50f89f560b825daa ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm" 1463434352 468 53f854284f6afa6c36aaa2d1090ecc12 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm" 1463434352 856 39c171483fe1bb7d0e1368980c0c205b ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -94,9 +95,9 @@
   "/usr/share/texlive/texmf-dist/tex/platex/jsclasses/jslogo.sty" 1601931076 5585 8e4615c54073c390d14154b29cee89cb ""
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
-  "/var/lib/texmf/web2c/euptex/platex.fmt" 1762613098 8150750 ad6df3965425a846b76b50bfa2d2a33d ""
-  "ptheory.aux" 1762613224.33516 208 5982a5c06385f86e3dc960959501863a "latex"
-  "ptheory.tex" 1762613223.62097 3263 9bd690c9cbc9ebb678b968281e4d64de ""
+  "/var/lib/texmf/web2c/euptex/platex.fmt" 1761209681 8149731 f04308bbc304a044415156a045588270 ""
+  "ptheory.aux" 1763098397.28831 208 6f715a42cc51f596fe595e8666edbabf "latex"
+  "ptheory.tex" 1763098396.66831 6636 4cc617101f108e6d50f89f560b825daa ""
   (generated)
   "ptheory.aux"
   "ptheory.dvi"

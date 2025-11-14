@@ -11,7 +11,7 @@
 }
 
 
-\author{6324059:塚本 智己}
+\author{}
 \title{確率論レポート課題}
 \date{提出日:\today}
 \begin{document}
@@ -59,24 +59,70 @@ X_n \Rightarrow X (n\rightarrow \infty)
 \begin{itembox}[l]{問題}
    上記で述べた，各種収束の関係性をその反例や証明を含めてまとめよ．必要に応じて図などを使用してもよい．
 \end{itembox}
-
+以下の表に,各種収束の関係性をまとめる.表中の記号は以下の通りである.
+\begin{itemize}
+    \item ○: $A\Rightarrow B$が収束することが成り立つ. (証明付き)
+    \item ×: $A\Rightarrow B$が収束しないことが成り立つ. (反例付き)
+    \item △: $A\Rightarrow B$が特殊な条件下で収束することが成り立つ. (条件付き証明付き)
+\end{itemize}
+表中の数字はそれぞれ,前者から後者への収束に関する証明や反例の番号を示す.
 \begin{center}
-\renewcommand{\arraystretch}{1.5} % 行の高さを少し広げる
+\renewcommand{\arraystretch}{1.25} % 行の高さを少し広げる
 \begin{tabular}{|c||c|c|c|c|}
     \hline
     % diagbox{左上の見出し}{右下の見出し}
-    \diagbox{チーム}{対戦相手} & A & B & C & D \\
+    \diagbox{B}{A\phantom{0}} & $a.s$ & $p$ & $L^p$ & $d$ \\
     \hline \hline
-    A & \diagbox{\phantom{0}}{\phantom{0}} & ○ 3-1 & × 0-2 & ○ 5-0 \\
+    $a.s$ & \diagbox{\phantom{0}}{\phantom{00}} & △ &  &  \\
     \hline
-    B & × 1-3 & \diagbox{\phantom{0}}{\phantom{0}} & ○ 2-0 & △ 1-1 \\
+    $p$ & ○ & \diagbox{\phantom{0}}{\phantom{00}} & ○ &  \\
     \hline
-    C & ○ 2-0 & × 0-2 & \diagbox{\phantom{0}}{\phantom{0}} & × 0-1 \\
+    $L^p$ &  &  & \diagbox{\phantom{0}}{\phantom{00}} &  \\
     \hline
-    D & × 0-5 & △ 1-1 & ○ 1-111 & \diagbox{\phantom{0}}{\phantom{0}} \\
+    $d$ & ○ & ○ & ○ & \diagbox{\phantom{0}}{\phantom{00}} \\
     \hline
 \end{tabular}
 \end{center}
 
+\subsection*{1. $X_n\xrightarrow{a.s}X \Rightarrow X_n\xrightarrow{p}X$}
+仮定$X_n\xrightarrow{a.s}X$より,任意の$\epsilon >0$に対して,
+\begin{equation*}
+    \lim_{n\rightarrow\infty}P\left(\bigcup_{m\geq n} {m\in\Omega ||X_m{\omega}-X{\omega}|\geq 0}\right) = 0
+\end{equation*}
+が成り立つ.また任意の$n\in \mathbb{N}$に対して,
+\begin{equation*}
+    {m\in\Omega ||X_m{\omega}-X{\omega}|\geq 0}\subset \bigcup _{m\geq n} {m\in\Omega ||X_m{\omega}-X{\omega}|\geq 0}
+\end{equation*}
+が成り立つので単調性より,
+\begin{align*}
+    &\lim_{n\rightarrow\infty}P({|X_n-X|\geq \epsilon}) \\
+    &\leq P\left(\bigcup_{m\geq n} {\omega\in\Omega ||X_m(\omega)-X(\omega)|\geq 0}\right) \\
+    &\rightarrow 0 (n\rightarrow \infty)
+\end{align*}
+が成り立つ.従って$X_n\xrightarrow{p}X$が成り立つ.
+
+\subsection*{2. $X_n\xrightarrow{L^p}X \Rightarrow X_n\xrightarrow{p}X$}
+任意の$\epsilon >0$に対して,マルコフの不等式及び仮定$X_n\xrightarrow{L^p}X$より,
+\begin{align*}
+    P(|X_n-X|\geq \epsilon) &=P(|X_n-X|^p\geq \epsilon^p)\\&\leq \frac{E[|X_n-X|^p]}{\epsilon ^p} \\
+    &\rightarrow 0 (n\rightarrow \infty)
+\end{align*}
+が成り立つ.従って$X_n\xrightarrow{p}X$が成り立つ.
+\subsection*{3. $X_n\xrightarrow{p}X \Rightarrow X_n\xrightarrow{d}X$}
+$X_n\xrightarrow{p}$より,任意の$\epsilon >0$に対して,
+\begin{align*}
+    &\phantom{=}\forall \epsilon >0, \lim_{n\rightarrow\infty}P(|X_n-X|\geq \epsilon)=1 
+    \\&\Leftrightarrow \forall \epsilon >0,\forall \delta >0, \exists N\in \mathbb{N},\\&\phantom{=====} \forall n\geq \mathbb{N}, [n\leq N \Rightarrow1-P(|X_n-X|\geq\epsilon)<\delta]
+\end{align*}
+であるから,ある$N\in\mathbb{N}$が存在して,$n\geq N$ならば$P(|X_n-X|\leq\epsilon)>1-\delta$を満たす.したがって任意に$F$の連続点$x\in\mathbb{R}$をとると,補題1より$Y$を$X_n$にすると,
+\begin{equation*}
+    |F_n(x)-F(x)|\leq |F(x+\epsilon)-F(x-\epsilon)|+\delta\;\;\;(n\geq N)
+\end{equation*}
+が成り立ち,xは$F$の連続点であるから,$$\lim_{\epsilon\downarrow 0}|F(x+\epsilon)-F(x-\epsilon)|=0$$であり,$\delta$は任意だったので,$$\lim_{n\rightarrow\infty}F_n(x)=F(x)$$が成り立つ.従って,$X_n\xrightarrow{d}X$が成り立つ.
+
+\subsection*{4. $X_n\xrightarrow{a.s}X \Rightarrow X_n\xrightarrow{d}X$}
+3.より, $X_n\xrightarrow{a.s}X\Rightarrow X_n\xrightarrow{p}X$が成り立ち, さらに$X_n\xrightarrow{p}X\Rightarrow X_n\xrightarrow{d}X$が成り立つので, 連鎖律より, $X_n\xrightarrow{a.s}X$ならば$X_n\xrightarrow{d}X$が成り立つ.
+\subsection*{5. $X_n\xrightarrow{L^p}X \Rightarrow X_n\xrightarrow{d}X$}
+3.より, $X_n\xrightarrow{L^p}X\Rightarrow X_n\xrightarrow{p}X$が成り立ち, さらに$X_n\xrightarrow{p}X\Rightarrow X_n\xrightarrow{d}X$が成り立つので, 連鎖律より, $X_n\xrightarrow{L^p}X$ならば$X_n\xrightarrow{d}X$が成り立つ.
  
 \end{document}
