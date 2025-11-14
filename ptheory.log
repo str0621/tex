@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.0-u1.29-230214-2.6 (utf8.euc) (TeX Live 2023/Debian) (preloaded format=platex 2025.10.23)  14 NOV 2025 14:33
+This is e-upTeX, Version 3.141592653-p4.1.0-u1.29-230214-2.6 (utf8.euc) (TeX Live 2023/Debian) (preloaded format=platex 2025.10.23)  14 NOV 2025 15:14
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -483,7 +483,7 @@ LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
 (Font)              scaled to size 11.09619pt on input line 25.
  [1
 
-] [2] [3] [4] (./ptheory.aux)
+] [2] [3] [4] [5] (./ptheory.aux)
  ***********
 pLaTeX2e <2023-02-14>+1, based on
 LaTeX2e <2023-11-01> patch level 1
@@ -493,10 +493,10 @@ L3 programming layer <2024-01-22>
 Here is how much of TeX's memory you used:
  8871 strings out of 474880
  148380 string characters out of 5763302
- 1932820 words of memory out of 5000000
+ 1933820 words of memory out of 5000000
  30991 multiletter control sequences out of 15000+600000
  572104 words of font info for 105 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 74i,18n,79p,338b,1025s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 74i,18n,79p,348b,1025s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on ptheory.dvi (4 pages, 13904 bytes).
+Output written on ptheory.dvi (5 pages, 16896 bytes).

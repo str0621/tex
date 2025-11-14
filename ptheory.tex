@@ -63,7 +63,6 @@ X_n \Rightarrow X (n\rightarrow \infty)
 \begin{itemize}
     \item ○: $A\Rightarrow B$が収束することが成り立つ. (証明付き)
     \item ×: $A\Rightarrow B$が収束しないことが成り立つ. (反例付き)
-    \item △: $A\Rightarrow B$が特殊な条件下で収束することが成り立つ. (条件付き証明付き)
 \end{itemize}
 表中の数字はそれぞれ,前者から後者への収束に関する証明や反例の番号を示す.
 \begin{center}
@@ -73,11 +72,11 @@ X_n \Rightarrow X (n\rightarrow \infty)
     % diagbox{左上の見出し}{右下の見出し}
     \diagbox{B}{A\phantom{0}} & $a.s$ & $p$ & $L^p$ & $d$ \\
     \hline \hline
-    $a.s$ & \diagbox{\phantom{0}}{\phantom{00}} & △ &  &  \\
+    $a.s$ & \diagbox{\phantom{0}}{\phantom{00}} & ×* & × & × \\
     \hline
-    $p$ & ○ & \diagbox{\phantom{0}}{\phantom{00}} & ○ &  \\
+    $p$ & ○ & \diagbox{\phantom{0}}{\phantom{00}} & ○ & × \\
     \hline
-    $L^p$ &  &  & \diagbox{\phantom{0}}{\phantom{00}} &  \\
+    $L^p$ & × & × & \diagbox{\phantom{0}}{\phantom{00}} & × \\
     \hline
     $d$ & ○ & ○ & ○ & \diagbox{\phantom{0}}{\phantom{00}} \\
     \hline
@@ -109,6 +108,31 @@ X_n \Rightarrow X (n\rightarrow \infty)
 \end{align*}
 が成り立つ.従って$X_n\xrightarrow{p}X$が成り立つ.
 \subsection*{3. $X_n\xrightarrow{p}X \Rightarrow X_n\xrightarrow{d}X$}
+\begin{itembox}[l]{補題1}
+    \;\;\;任意の$\epsilon,\delta>0$に対して以下が成り立つ.
+\begin{align*}
+    P(|X-Y|\leq\epsilon)\geq 1-\delta\Rightarrow \forall x\in\mathbb{R}, |F(x)-G(x)|\leq |F_X(x+\epsilon)-F_X(x-\epsilon)|+\delta
+\end{align*}
+(Proof)\\
+\;\;\;任意に$\epsilon,\delta>0$を取り, $\Omega$の可測分割として$$\Omega = \{\omega\in\Omega||X(\omega)-Y(\omega)|\leq\epsilon\}\cup\{\omega\in\Omega||X(\omega)-Y(\omega)|>\epsilon\}$$を考える.ここで任意の$x\in\mathbb{R}$に対して,"$Y\leq x$かつ$|X-Y|\leq\epsilon$"ならば"$X\leq x+\epsilon$"を満たすので,
+\begin{align*}
+    G(x)&=P(Y\leq x)\\
+    &=P(Y\leq x,|X-Y|\leq \epsilon)+P(Y\leq x,|X-Y|>\epsilon)\\
+    &\leq P(X\leq x+\epsilon)+P(|X-Y|>\epsilon)\\
+    &\leq F(x+\epsilon)+\delta
+\end{align*}
+が成り立つ.
+\\同様に,XとYの役割を交換して$x$を$x-\epsilon$に置き換えると,$$F(x-\epsilon)=P(X\leq x-\epsilon)=G(x)+\delta$$が成り立つことが示される.したがって,
+$$F(x-\epsilon)-\delta\leq G(x) \leq F(x+\epsilon)+\delta$$であり,自明な不等式$-F(x+\epsilon)\leq-F(x)\leq -F(x-\epsilon)$から辺々を足し合わせると,
+\begin{align*}
+    \phantom{==}F(x-\epsilon)-F(x+\epsilon)-\delta&\leq G(x)-F(x)\leq F(x+\epsilon)-F(x-\epsilon)+\delta\\
+    \Leftrightarrow -|F(x+\epsilon)-F(x-\epsilon)|-\delta&\leq G(x)-F(x)\leq |F(x+\epsilon)-F(x-\epsilon)|+\delta\\
+    \Leftrightarrow |G(x)-F(x)|&\leq |F(x+\epsilon)-F(x-\epsilon)|+\delta
+\end{align*}
+が成り立つ.
+
+
+\end{itembox}
 $X_n\xrightarrow{p}$より,任意の$\epsilon >0$に対して,
 \begin{align*}
     &\phantom{=}\forall \epsilon >0, \lim_{n\rightarrow\infty}P(|X_n-X|\geq \epsilon)=1 

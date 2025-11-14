@@ -1,12 +1,12 @@
 # Fdb version 4
-["dvipdf"] 1763098397.32622 "ptheory.dvi" "ptheory.pdf" "ptheory" 1763098397.67115 0
-  "ptheory.dvi" 1763098397.28831 13904 ab192967b37e6a7cd40fe4cf64fbf682 "latex"
+["dvipdf"] 1763100877.82548 "ptheory.dvi" "ptheory.pdf" "ptheory" 1763100878.12132 0
+  "ptheory.dvi" 1763100877.79025 16896 02453b1f3c332971322db92fb225bd11 "latex"
   (generated)
   "ptheory.pdf"
   (rewritten before read)
-["latex"] 1763098396.87676 "/home/str/tex/ptheory.tex" "ptheory.dvi" "ptheory" 1763098397.66986 0
+["latex"] 1763100877.39964 "/home/str/tex/ptheory.tex" "ptheory.dvi" "ptheory" 1763100878.12044 0
   "/etc/texmf/web2c/texmf.cnf" 1761209449.24117 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/str/tex/ptheory.tex" 1763098396.66831 6636 4cc617101f108e6d50f89f560b825daa ""
+  "/home/str/tex/ptheory.tex" 1763100877.18626 8066 566ef714c5ee22f2745f25df4516925a ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm" 1463434352 468 53f854284f6afa6c36aaa2d1090ecc12 ""
@@ -96,8 +96,8 @@
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/web2c/euptex/platex.fmt" 1761209681 8149731 f04308bbc304a044415156a045588270 ""
-  "ptheory.aux" 1763098397.28831 208 6f715a42cc51f596fe595e8666edbabf "latex"
-  "ptheory.tex" 1763098396.66831 6636 4cc617101f108e6d50f89f560b825daa ""
+  "ptheory.aux" 1763100877.78625 208 c3e69b856609d82ef6cd246a87158c4a "latex"
+  "ptheory.tex" 1763100877.18626 8066 566ef714c5ee22f2745f25df4516925a ""
   (generated)
   "ptheory.aux"
   "ptheory.dvi"
